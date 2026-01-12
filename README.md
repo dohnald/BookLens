@@ -28,10 +28,10 @@
 
 ## 📥 설치 방법 (Installation)
 
-이 프로그램은 Chrome Web Store에 등록되지 않았으며, **개발자 모드(Developer Mode)**를 통해 직접 설치해야 합니다.
+이 프로그램은 Chrome Web Store에 등록되지 않았으며, 개발자 모드(Developer Mode)를 통해 직접 설치해야 합니다.
 
 ### 1단계: 소스 코드 다운로드
-1. 이 저장소(Repository)의 우측 상단 **[Code]** 버튼을 클릭하고 **[Download ZIP]**을 선택합니다.
+1. 이 저장소(Repository)의 우측 [Releases] 버튼을 클릭하고 [Download ZIP]을 선택합니다.
 2. 다운로드한 ZIP 파일의 압축을 **해제**합니다. (폴더 위치를 기억해두세요)
 
 ### 2단계: 크롬 확장 프로그램 메뉴 접속
