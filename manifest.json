@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "BookLens (북렌즈)",
+  "version": "0.1.1",
+  "description": "온라인 서점에서 원치 않는 출판사, 저자 도서를 시각적으로 차단합니다.",
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://*.aladin.co.kr/*",
+    "https://*.yes24.com/*",
+    "https://*.kyobobook.co.kr/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.aladin.co.kr/*",
+        "https://*.yes24.com/*",
+        "https://*.kyobobook.co.kr/*"
+      ],
+      "js": [
+        "scripts/selectors.js",
+        "scripts/utils.js",
+        "scripts/content.js"
+      ],
+      "css": [
+        "scripts/content.css"
+      ]
+    }
+  ]
+}

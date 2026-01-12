@@ -1,0 +1,101 @@
+/* BookLens Collapse Styles */
+.booklens-collapsed {
+  height: auto !important; /* Allow auto height to fit content */
+  min-height: 45px !important;
+  overflow: hidden !important;
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ddd !important;
+  margin-bottom: 10px !important;
+  cursor: pointer;
+  position: relative !important;
+  display: block !important;
+  
+  /* Reset layout properties */
+  float: none !important;
+  clear: both !important;
+  z-index: 10 !important;
+  padding: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  list-style: none !important;
+}
+
+/* Hide all direct children except the placeholder */
+.booklens-collapsed > *:not(.booklens-placeholder) {
+  display: none !important;
+}
+
+.booklens-collapsed:hover {
+  background-color: #ededed !important;
+  border-color: #ccc !important;
+}
+
+/* Placeholder Styles */
+.booklens-placeholder {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.booklens-placeholder .bl-reason {
+  font-size: 13px;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.booklens-placeholder .bl-info {
+  font-size: 11px;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Control Button Styles */
+.booklens-control-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  border: none;
+  background: none;
+  padding: 0 2px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+  z-index: 100;
+  vertical-align: middle;
+  line-height: 1;
+  position: relative; 
+  white-space: nowrap;
+}
+
+.booklens-control-btn.block {
+  color: #e74c3c;
+}
+
+.booklens-control-btn.block:hover {
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.booklens-control-btn.unblock {
+  color: #27ae60;
+}
+
+.booklens-control-btn.unblock:hover {
+  background-color: rgba(39, 174, 96, 0.1);
+}
